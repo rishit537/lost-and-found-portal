@@ -124,6 +124,7 @@ public class ReportItemDialog extends JDialog {
         taDescription = new JTextArea(3, 20);
         taDescription.setLineWrap(true);
         taDescription.setWrapStyleWord(true);
+        taDescription.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 13));
         JScrollPane sp = new JScrollPane(taDescription);
         content.add(sp, gbc);
         row++;

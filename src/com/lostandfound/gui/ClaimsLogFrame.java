@@ -29,7 +29,7 @@ public class ClaimsLogFrame extends JFrame {
 
         // ---- Header ----
         JPanel header = new JPanel();
-        header.setBackground(new Color(55, 71, 97));
+        header.setBackground(new Color(27, 94, 32));
         header.setBorder(BorderFactory.createEmptyBorder(12, 16, 12, 16));
         header.setLayout(new BoxLayout(header, BoxLayout.Y_AXIS));
 
@@ -41,7 +41,7 @@ public class ClaimsLogFrame extends JFrame {
 
         JLabel subtitle = new JLabel("History of all claimed items");
         subtitle.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 12));
-        subtitle.setForeground(new Color(180, 195, 220));
+        subtitle.setForeground(new Color(165, 214, 167));
         subtitle.setAlignmentX(Component.LEFT_ALIGNMENT);
         header.add(subtitle);
 
@@ -63,7 +63,7 @@ public class ClaimsLogFrame extends JFrame {
 
         // Alternating row colours
         table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
-            private final Color even = new Color(245, 247, 250);
+            private final Color even = new Color(241, 248, 233);
             private final Color odd = Color.WHITE;
 
             @Override
@@ -77,14 +77,14 @@ public class ClaimsLogFrame extends JFrame {
         // Header styling
         JTableHeader th = table.getTableHeader();
         th.setFont(new Font("Segoe UI Emoji", Font.BOLD, 13));
-        th.setBackground(new Color(55, 71, 97));
+        th.setBackground(new Color(27, 94, 32));
         th.setForeground(Color.WHITE);
         th.setOpaque(true);
         th.setPreferredSize(new Dimension(th.getWidth(), 34));
 
         DefaultTableCellRenderer headerRenderer = new DefaultTableCellRenderer();
         headerRenderer.setHorizontalAlignment(SwingConstants.LEFT);
-        headerRenderer.setBackground(new Color(55, 71, 97));
+        headerRenderer.setBackground(new Color(27, 94, 32));
         headerRenderer.setForeground(Color.WHITE);
         headerRenderer.setFont(new Font("Segoe UI Emoji", Font.BOLD, 13));
         headerRenderer.setOpaque(true);

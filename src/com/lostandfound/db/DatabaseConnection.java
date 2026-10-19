@@ -9,7 +9,7 @@ public final class DatabaseConnection {
 
     private static final String URL  = "jdbc:mysql://localhost:3306/lost_and_found_portal?allowPublicKeyRetrieval=true&useSSL=false";
     private static final String USER = "root";
-    private static final String PASS = "";          // MySQL password here
+    private static final String PASS = "YOUR_PASSWORD";          // MySQL password here
 
     private static Connection connection;
 
@@ -29,7 +29,7 @@ public final class DatabaseConnection {
         return connection;
     }
 
-    /** Closes the shared connection if it is open. */
+    // Closes the shared connection if it is open.
     public static void closeConnection() {
         if (connection != null) {
             try {

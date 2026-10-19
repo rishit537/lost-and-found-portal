@@ -88,7 +88,7 @@ public class MainDashboardFrame extends JFrame {
 
         // Alternating row colors
         table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
-            private final Color even = new Color(245, 247, 250);
+            private final Color even = new Color(241, 248, 233);
             private final Color odd = Color.WHITE;
 
             @Override
@@ -102,14 +102,14 @@ public class MainDashboardFrame extends JFrame {
         // Header styling
         JTableHeader th = table.getTableHeader();
         th.setFont(new Font("Segoe UI Emoji", Font.BOLD, 13));
-        th.setBackground(new Color(55, 71, 97));
+        th.setBackground(new Color(27, 94, 32));
         th.setForeground(Color.WHITE);
         th.setOpaque(true);
         th.setPreferredSize(new Dimension(th.getWidth(), 34));
 
         DefaultTableCellRenderer headerRenderer = new DefaultTableCellRenderer();
         headerRenderer.setHorizontalAlignment(SwingConstants.LEFT);
-        headerRenderer.setBackground(new Color(55, 71, 97));
+        headerRenderer.setBackground(new Color(27, 94, 32));
         headerRenderer.setForeground(Color.WHITE);
         headerRenderer.setFont(new Font("Segoe UI Emoji", Font.BOLD, 13));
         headerRenderer.setOpaque(true);
@@ -141,7 +141,7 @@ public class MainDashboardFrame extends JFrame {
 
     private JPanel buildHeader() {
         JPanel p = new JPanel(new BorderLayout());
-        p.setBackground(new Color(55, 71, 97));
+        p.setBackground(new Color(27, 94, 32));
         p.setBorder(BorderFactory.createEmptyBorder(14, 20, 14, 20));
 
         JLabel title = new JLabel("Lost & Found Portal");
@@ -151,7 +151,7 @@ public class MainDashboardFrame extends JFrame {
 
         JLabel subtitle = new JLabel("Report, search, and claim lost or found items");
         subtitle.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 13));
-        subtitle.setForeground(new Color(180, 195, 220));
+        subtitle.setForeground(new Color(165, 214, 167));
         p.add(subtitle, BorderLayout.EAST);
 
         return p;
@@ -159,7 +159,7 @@ public class MainDashboardFrame extends JFrame {
 
     private JPanel buildFilterBar() {
         JPanel p = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 8));
-        p.setBackground(new Color(235, 238, 244));
+        p.setBackground(new Color(232, 245, 233));
         p.setBorder(BorderFactory.createEmptyBorder(4, 12, 4, 12));
 
         p.add(new JLabel("Search:"));
@@ -175,6 +175,7 @@ public class MainDashboardFrame extends JFrame {
 
         p.add(new JLabel("Status:"));
         cbStatusFilter = new JComboBox<>(new String[]{"All", "Lost", "Found"});
+        cbStatusFilter.setPrototypeDisplayValue("xxxxxxxxxxx"); // Set the width according to this string
         p.add(cbStatusFilter);
 
         JButton btnSearch = new JButton("Search");
@@ -195,8 +196,8 @@ public class MainDashboardFrame extends JFrame {
 
     private JPanel buildActionBar() {
         JPanel p = new JPanel(new FlowLayout(FlowLayout.CENTER, 14, 10));
-        p.setBackground(new Color(245, 247, 250));
-        p.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, new Color(210, 215, 225)));
+        p.setBackground(new Color(241, 248, 233));
+        p.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, new Color(200, 230, 201)));
 
         JButton btnReport = new JButton("📝  Report Item");
         JButton btnMarkFound = new JButton("📍  Mark as Found");
