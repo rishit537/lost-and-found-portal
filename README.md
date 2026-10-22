@@ -13,11 +13,12 @@ A Java Swing desktop application for reporting, searching, and claiming lost or 
 1. **Download:**
    - Go to [MySQL Connector/J Downloads](https://dev.mysql.com/downloads/connector/j/).
    - Select **"Platform Independent"** from the *Operating System* dropdown.
-   - Download the ZIP archive (e.g., `mysql-connector-j-9.x.x.zip`) and extract it.
+   - Download the ZIP archive (e.g., `mysql-connector-j-26.x.x.zip`) and extract it.
    - Locate the JAR file inside the extracted folder (e.g., `mysql-connector-j-x.x.x.jar`).
 
 2. **Add to Project:**
-   - Copy the `.jar` file into the project's [`lib/`](lib/) directory (you can rename it to `mysql-connector-j.jar` or keep the versioned name).
+   - Copy the `.jar` file into the project's [`lib/`](lib/) directory.
+   - Rename the file to `mysql-connector-j.jar`.
 
 3. **Configure in IDE (Optional):**
    - **IntelliJ IDEA:**
